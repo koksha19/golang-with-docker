@@ -8,7 +8,7 @@ RUN go mod tidy
 COPY . .
 RUN go build -o fizzbuzz
 
-FROM scratch
+FROM gcr.io/distroless/base
 
 WORKDIR /app
 
